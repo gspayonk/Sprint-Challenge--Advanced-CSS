@@ -7,16 +7,31 @@
     align-items: center;
     padding: 3%;
     background-color: whitesmoke;
+
+    @media @phone {
+        width: 90%;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+        padding: 3%;
+    }
     
     .top-space {
         margin-bottom: 5%;
         h1 {
             font-size: 5rem;
+            @media @phone{
+                width: 100%;
+            }
+        }
+
+        @media @phone{
+            width: 80%;
         }
         
     }
     
-    @media (max-width:500px){
+    @media @phone {
     width:100%;
     flex-direction:column;
     justify-content:center;
@@ -25,7 +40,7 @@
     .top-space{
     margin-left:0;
     
-    @media (max-width:500px){
+    @media @phone{
         margin:0;
     }
 
@@ -37,7 +52,7 @@
     align-items:center;
     margin-left: 10%;
     
-    @media (max-width:500px){
+    @media @phone{
         width:100%;
     }
 
