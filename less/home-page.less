@@ -118,3 +118,77 @@
     }
   }
 }// home
+
+//contact page
+.contact{
+  .mainhd {
+    border-radius: 20px;
+    @media @phone{
+      width: 100%;
+  }
+  }
+
+  h1 {
+    padding: 15px;
+    font-size: 5rem;
+    margin-left: 35%;
+    padding: 5% 0;
+    @media @phone{
+      width: 100%;
+      margin-left: 20%;
+  }
+
+  }
+
+  p {
+    padding:0 15px;
+    @media @phone{
+      width: 100%;
+  }
+  }
+
+  img.mainhd {
+  margin-left: 19%;
+  @media @phone{
+    width: 100%;
+    margin-left:0%;
+}
+  }
+
+  @media @phone{
+    width: 100%;
+}
+
+//contact box
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+
+input[type=submit] {
+  background-color: @header-font-color;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: crimson;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: whitesmoke ;
+  padding: 20px;
+}
+}
