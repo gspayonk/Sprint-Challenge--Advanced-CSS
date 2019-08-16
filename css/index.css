@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 html,
 body,
@@ -160,6 +160,39 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+  background-color: lightgrey;
+}
+@media (max-width: 500px) {
+  .nav-wrapper {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.nav-wrapper .top-space {
+  margin-left: 0;
+}
+@media (max-width: 500px) {
+  .nav-wrapper .top-space {
+    margin: 0;
+  }
+}
+.nav-wrapper .nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .nav-wrapper .nav-links {
+    width: 100%;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +202,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro .mainhd {
+  border-radius: 20px;
 }
 .home .intro h2 {
   padding: 15px;
