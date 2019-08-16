@@ -209,6 +209,8 @@ p {
 @media (max-width: 500px) {
   .nav-wrapper .top-space h1 {
     width: 100%;
+    margin-bottom: 8%;
+    font-size: 3.5rem;
   }
 }
 @media (max-width: 500px) {
@@ -366,6 +368,14 @@ footer {
 .home .walk .walk-text .btn:hover {
   background: white;
   color: #23293B;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
