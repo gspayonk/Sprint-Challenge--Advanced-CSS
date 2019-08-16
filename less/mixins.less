@@ -15,5 +15,14 @@
 	font-family:'Russo One', sans-serif;;
 	font-size:15px;
 	padding:11px 13px;
-	text-decoration:none;
+    text-decoration:none;
+    
+    @media @mobile {
+        width:100%;
+    }
+
+    &:hover {
+        background: @white;
+        color:@header-font-color;
+    }
 }
