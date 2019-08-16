@@ -58,9 +58,7 @@
     p {
       margin-top: 13px;
     }
-    @media @phone{
-      width: 100%;
-  }
+
   }
 
   .walk {
@@ -70,12 +68,19 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      flex-direction: column-reverse;
+      width: 100%;
+      padding: 50px 3%;
+    }
+
+
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 100%;
+      }
 
-      @media @phone{
-        .phonemix ();
-    }
 
       h3 {
         margin-bottom: 10px;
@@ -88,25 +93,25 @@
       .btn {
         .myButton();
       }
-
-      @media @phone{
-        .phonemix ();
-    }
+  
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%; 
+      @media @phone {
+        width: 100%;
+        margin-left:0;
+        padding-bottom: 20px;
+      }
+  
 
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
-        
+        border-radius: 10px;    
     }
-    }
-    @media @phone {
-      .custom-flex(column-reverse, center, center);
+    
     }
   }
 }// home
